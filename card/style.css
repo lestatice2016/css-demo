@@ -1,0 +1,33 @@
+div,p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 300px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+.container .bg{
+    background: url("../img/bigbang-row.jpg") no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.container .bg:hover{
+    transform: scale(.9);
+}
+.container .title{
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 5px;
+}

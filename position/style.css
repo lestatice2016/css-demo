@@ -1,0 +1,39 @@
+body,div,ul,li,p{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.item{
+    padding: 5px 5px 5px 80px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+}
+.item-img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.icon{
+    max-width: 100%;
+}
+.num{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+}
+.item-text{
+    height: 60px;
+}
+.item-time{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul class="list">
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">解决bug</span></li>
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">分享资料</span></li>
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">看书</span></li>
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">看电影</span></li>
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">学习</span></li>
+    <li class="list-item"><i  class="icon"></i><span class="item-tt">听音乐</span></li>
+</ul>
+</body>
+<script>
+   //事件委托
+    let isSelect = false;
+    const list = document.querySelector('.list');
+    list.addEventListener('click',function (e) {
+        var tar = e.target;
+        if (tar.className.includes('icon')){
+            isSelect = !isSelect;
+            var item = tar.parentNode.querySelector('span');
+            if (isSelect){
+                tar.classList.add('item-click');
+                item.classList.add('item-done');
+            }else {
+                tar.classList.remove('item-click');
+                item.classList.remove('item-done');
+            }
+        }
+    });
+    //每个按钮添加事件
+//   const btn =document.querySelectorAll('.icon');
+//   const items = document.querySelectorAll('.item-tt');
+//    btn.forEach((item,index) => {
+//        item.addEventListener('click',function(e){
+//            isSelect = !isSelect;
+//            if (isSelect){
+//                items[index].classList.add('item-done');
+//                item.classList.add('item-click');
+//            }else {
+//                items[index].classList.remove('item-done');
+//                item.classList.remove('item-click');
+//            }
+//    });});
+</script>
+</html>
